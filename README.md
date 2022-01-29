@@ -13,7 +13,7 @@
     <a href="https://github.com/sherjeelaq/maelix"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://maelixmusic.web.app/">View Demo</a>
+    <a href="https://maelixmusic.web.app/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/sherjeelaq/maelix/issues">Report Bug</a>
     ·
