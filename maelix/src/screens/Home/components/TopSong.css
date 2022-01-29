@@ -1,0 +1,137 @@
+.topSong {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 0px 28px -6px rgba(17, 30, 73, 0.08);
+  -moz-box-shadow: 0px 0px 28px -6px rgba(17, 30, 73, 0.08);
+  box-shadow: 0px 0px 28px -6px rgba(17, 30, 73, 0.08);
+  width: 100%;
+}
+
+.searchSong {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.searchSong:hover {
+  background-color: #e0e0e0;
+}
+
+.topSong__left {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topSong__left > h4 {
+  color: #111e49;
+  padding-right: 14px;
+}
+
+.topSong__left > img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.searchSong__songImg {
+  object-fit: cover !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 5px !important;
+}
+
+.topSong__left > svg {
+  color: #b4bbd2;
+  font-size: 18px;
+  padding-right: 6px;
+}
+
+.topSong__left > h3 {
+  font-size: 18px;
+}
+
+.searchSong__songTitle {
+  font-size: 14px !important;
+}
+
+.topSong__center {
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.searchSong__center {
+  flex: 1;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.topSong__center > p {
+  color: #9aa0b6;
+}
+
+.topSong__artist {
+  margin-right: 20px;
+}
+
+.searchSong__artist {
+  margin: 0 !important;
+  font-size: 12px;
+  color: #9aa0b6;
+}
+.topSong__right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topSong__right > .topSong__icon {
+  margin-right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.topSong__right > .topSong__iconTwo {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.topSong__heartIcon--active {
+  color: #e74c3c;
+  filter: drop-shadow(0 0 4px rgba(231, 76, 60, 0.2)) !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .topSong {
+    width: 86vw;
+  }
+
+  .topSong__left > div > h3 {
+    font-size: 14px;
+  }
+
+  .topSong__center {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .topSong__right > .topSong__icon {
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+
+  .topSong__right > .topSong__iconTwo {
+    margin-right: 0;
+  }
+}

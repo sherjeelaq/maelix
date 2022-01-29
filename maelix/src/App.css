@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+.app {
+  color: #0d1625;
+  min-height: 100vh;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9fafe;
+  min-height: 100vh;
+}
+
+.app__player {
+  position: relative;
+}

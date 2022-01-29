@@ -1,0 +1,8 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  &:active {
+    opacity: 0.9;
+  }
+}

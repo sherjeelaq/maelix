@@ -1,0 +1,29 @@
+.app__explore {
+  padding: 50px 0;
+  background-color: #f9fafe;
+  flex: 1;
+  margin-left: 24%;
+  margin-bottom: 95px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .app__explore {
+    margin-left: unset;
+    flex: 1;
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .app__explore {
+    width: unset;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .app__explore {
+    margin-left: unset;
+    width: 90%;
+  }
+}

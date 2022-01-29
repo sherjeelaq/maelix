@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react",
+    "paths": {
+      "lib": ["lib"],
+      "actions": ["store/actions"],
+      "components": ["components"],
+      "containers": ["containers"],
+      "screens": ["screens"],
+      "assets": ["assets"],
+      "helpers": ["helpers"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

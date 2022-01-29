@@ -1,0 +1,39 @@
+.genres__discover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+  border-radius: 20px;
+  min-height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.genres__bg {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+.genres__bg > h3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .genres__discover {
+    min-height: 105px;
+  }
+
+  .genres__bg > h3 {
+    font-size: 22px !important;
+  }
+}

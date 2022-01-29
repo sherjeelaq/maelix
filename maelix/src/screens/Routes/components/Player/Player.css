@@ -1,0 +1,254 @@
+.player {
+  position: fixed;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 5px 8px 5px rgba(240, 240, 240, 1);
+  background-color: white;
+}
+
+.player--mobile {
+  height: 82px;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.player__left {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.player__left--mobile {
+  justify-content: space-between;
+  width: calc(100vw - 40px);
+  padding: 0 20px;
+}
+
+.player__songInfo {
+  display: flex;
+  align-items: center;
+}
+
+.player__songInfo > img {
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  margin-right: 13px;
+  border-radius: 10px;
+}
+
+.player__songInfo > img {
+  width: 32px;
+  height: 32px;
+}
+
+.player__infoText > p {
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.player__mobileIcons {
+  display: flex;
+  align-items: center;
+}
+
+.player__icon--mobile {
+  cursor: pointer;
+}
+
+.player__icon--mobileLoading {
+  margin-left: 28px;
+}
+
+.player__icon--mobile > svg {
+  font-size: 24px;
+  margin-left: 25px;
+}
+
+.player__center {
+  flex: 0.6;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player__center--mobile {
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.player__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+.player__icon {
+  cursor: pointer;
+}
+
+.player__waveLoadingAbsolute {
+  position: absolute;
+  width: 100%;
+}
+
+.player__waveLoadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__wave {
+  width: 100%;
+  position: relative;
+}
+
+.player__wave--mobile {
+  width: calc(100vw - 40px);
+}
+
+.player__slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player__center > .player__slider > *.MuiSlider-root {
+  margin: 0 10px;
+  color: #2196f3;
+}
+
+.player__right {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player__icon:hover,
+.player__toggled {
+  transition: transform 0.2 ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.player__untoggled {
+  color: gray;
+}
+.player__toggled {
+  color: #03a9f4 !important;
+}
+
+.player__playIcon {
+  font-size: 24px;
+}
+
+.player__right * .MuiSlider-root {
+  color: #03a9f4;
+  margin-right: 40px;
+}
+
+.player__audioIcon {
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+.player__muteIcon {
+  margin-top: 4px;
+  font-size: 20px;
+  color: gray;
+}
+.player__spacing {
+  margin-left: 5px;
+}
+
+.player__heartIcon--active {
+  color: #e53935;
+  filter: drop-shadow(0 0 4px rgba(231, 76, 60, 0.2)) !important;
+}
+
+.player__listIcon > svg {
+  font-size: 26px !important;
+}
+
+.player__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__modalContainer {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  padding: 40px 20px;
+  min-height: 10vh;
+  border-radius: 20px;
+  outline: 0;
+}
+
+.player__modalSelect {
+  width: 100%;
+  margin-top: 20px !important;
+}
+
+.player__modalButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.player__modalButtons--cancel {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  margin-right: 10px;
+}
+
+.player__modalButtons--cancel:hover,
+.player__modalButtons--cancel:focus {
+  border: 1px solid #e74c3c;
+  background-color: #e74c3c;
+  box-shadow: 0 6px 25px rgba(231, 76, 60, 0.4);
+  color: #ffffff;
+}
+
+.player__modalButtons--add {
+  background: linear-gradient(45deg, #03a9f4, #2f90e0);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 25px rgba(22, 151, 227, 0.4);
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__modalButtons--add:hover,
+.player__modalButtons--add:focus {
+  box-shadow: 0 12px 45px rgba(22, 151, 227, 0.6);
+}

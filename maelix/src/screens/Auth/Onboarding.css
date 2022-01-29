@@ -1,0 +1,108 @@
+.onboarding {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  /* justify-content: space-around; */
+}
+
+.onboarding__left {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 50px;
+}
+
+.onboarding__left > h1 {
+  color: #1f1f31;
+  margin-top: 50px;
+  font-size: 45px;
+  font-family: "Nunito", sans-serif;
+}
+
+.onboarding__form {
+  width: 80%;
+}
+.onboarding__form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  flex: 1;
+}
+
+.onboarding__input {
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid lightgray;
+  height: 24px;
+  color: #1f1f31;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.onboarding__submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #03a9f4;
+  margin-top: 40px;
+  padding: 15px;
+  width: 96%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.onboarding__submitButton > h4 {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.onboarding__submitButton > svg {
+  font-size: 25px;
+  color: white;
+}
+
+.onboarding__right {
+  flex: 0.6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  background-color: #edf9fe;
+}
+
+.onboarding__right > .onboarding__svg > svg {
+  object-fit: contain;
+  width: 42vw;
+}
+
+@media only screen and (max-width: 1050px) {
+  .onboarding {
+    justify-content: center;
+  }
+  .onboarding__left {
+    flex: 0.5;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .onboarding {
+    justify-content: center;
+  }
+  .onboarding__left {
+    flex: 1;
+  }
+  .onboarding__right {
+    display: none;
+  }
+}

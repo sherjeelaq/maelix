@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+.login {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100vh;
+}
+
+.login__left {
+  flex: 0.4;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 50px;
+}
+
+.login__left > img {
+  object-fit: contain;
+  width: 120px;
+}
+
+.login__left > h1 {
+  color: #1f1f31;
+  margin-top: 50px;
+  font-size: 45px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.login__external {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.login__google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid rgba(184, 184, 184, 0.5);
+  padding: 12px 15px;
+  width: 80%;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 6px 13px -7px rgba(180, 180, 180, 1);
+  -moz-box-shadow: 1px 6px 13px -7px rgba(180, 180, 180, 1);
+  box-shadow: 1px 6px 13px -7px rgba(180, 180, 180, 1);
+  border-radius: 3px;
+}
+
+.login__google > h4 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #1f1f31;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.login__dividerWithText {
+  margin: 20px 0;
+  width: 85%;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login__dividerWithText > h4 {
+  background-color: #ffffff;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #bababa;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: -18px;
+  left: 27%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+}
+hr {
+  border: 1px solid #f6f6f6;
+}
+.login__svg > svg {
+  object-fit: contain;
+  max-width: 500px;
+  width: 100%;
+}
+
+.login__form {
+  width: 80%;
+}
+.login__form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  flex: 1;
+}
+
+.login__input {
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid lightgray;
+  height: 24px;
+  color: #1f1f31;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.login__formExtra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.login__keepMeLoggedIn {
+  display: flex;
+  align-items: center;
+}
+
+.login__checkbox {
+  cursor: pointer;
+}
+
+.login__keepMeLoggedIn > p {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  color: #1f1f31;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.login__forgotPassword {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__forgotPassword > a {
+  color: #1f1f31;
+}
+.login__forgotPassword > a > p {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  color: #1f1f31;
+  font-weight: 600;
+}
+
+.login__submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #03a9f4;
+  margin-top: 40px;
+  padding: 15px;
+  width: 96%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.login__submitButton > h4 {
+  flex: 0.9;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.login__submitButton > svg {
+  font-size: 25px;
+  color: white;
+}
+
+.login__form > form > hr {
+  border: 1px solid #f6f6f6;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.login__signup {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login__signup > h6 {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.login__signup > h6 > a:visited,
+.login__signup > h6 > a:link {
+  color: #03a9f4;
+}
+
+.login__right {
+  flex: 0.6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  background-color: #edf9fe;
+}
+
+.login__right > .login__svg > svg {
+  object-fit: contain;
+  max-width: 600px;
+}
+
+.login__musicContainer {
+  position: relative;
+}
+.login__music {
+  position: absolute;
+  left: 140px;
+  top: 15px;
+}
+
+.login__note {
+  position: absolute;
+  animation: notes 3s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+  top: 10px;
+  color: #03a9f4;
+}
+
+.login__note1 {
+  animation-delay: 0.5s;
+  left: 0px;
+}
+.login__note2 {
+  animation-delay: 1.2s;
+  left: -5px;
+}
+.login__note3 {
+  animation-delay: 1.9s;
+  left: 3px;
+}
+.login__note4 {
+  animation-delay: 2.5s;
+  left: -10px;
+}
+.login__note5 {
+  animation-delay: 3s;
+  left: 10px;
+}
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.2) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.2) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .login__right {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .login {
+    justify-content: center;
+  }
+  .login__left {
+    flex: 0.5;
+  }
+  .login__dividerWithText > h4 {
+    left: 17%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login {
+    justify-content: center;
+  }
+  .login__left {
+    flex: auto;
+    width: 100vw;
+  }
+  .login__right {
+    display: none;
+  }
+  .login__dividerWithText > h4 {
+    left: 27%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .login__left {
+    padding: 50px 10px;
+  }
+
+  .login__left > h1 {
+    font-size: 32px;
+  }
+
+  .login__music {
+    left: 94px;
+  }
+
+  .login__dividerWithText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login__dividerWithText > hr {
+    width: 85%;
+  }
+  .login__dividerWithText > h4 {
+    left: unset;
+  }
+}
