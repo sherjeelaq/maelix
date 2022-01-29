@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sherjeelaq/pixetube">
-    <img src="public/maelix.png" alt="Logo" width="80" height="80">
+    <img src="maelix/public/maelix.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Maelix - Music Streaming</h3>
