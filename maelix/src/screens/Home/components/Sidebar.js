@@ -73,24 +73,6 @@ function InnerComponent({ toggleSidebar }) {
     }
   }, [open])
 
-  useEffect(() => {
-    document.querySelector("#sidebar__scrollbarStyle").addEventListener(
-      "mouseenter",
-      function (e) {
-        e.target.style.overflow = "auto"
-      },
-      false
-    )
-
-    document.querySelector("#sidebar__scrollbarStyle").addEventListener(
-      "mouseleave",
-      function (e) {
-        e.target.style.overflow = "hidden"
-      },
-      false
-    )
-  }, [])
-
   const handleClickOpen = () => {
     setOpen(true)
   }
